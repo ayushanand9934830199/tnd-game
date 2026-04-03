@@ -52,7 +52,7 @@ export default function GameSession() {
     setCurrentQ(null)
   }
 
-  const selectTndType = (type: 'truth' | 'dare') => {
+  const selectTndType = (_type: 'truth' | 'dare') => {
     // User requested choice doesn't dictate the question. Pull from ALL available tnd questions!
     if (questions.length === 0) {
         alert("no questions in bank!")

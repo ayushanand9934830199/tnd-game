@@ -38,6 +38,9 @@ export default function Join() {
               <input className="glass-input" placeholder="your name" value={name} onChange={e => setName(e.target.value)} required />
               <button className="glass-button" style={{ width: '100%' }} type="submit">join in</button>
             </form>
+            <p style={{ textAlign: 'center', marginTop: '1.5rem', cursor: 'pointer', opacity: 0.8, color: '#701a75' }} onClick={() => navigate('/')}>
+              back to host login.
+            </p>
           </>
         ) : (
           <div style={{ textAlign: 'center' }}>
