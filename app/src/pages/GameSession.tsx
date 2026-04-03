@@ -93,7 +93,7 @@ export default function GameSession() {
              code: <span style={{color: '#c084fc', background: 'rgba(255,255,255,0.5)', padding: '0.2rem 1rem', borderRadius: '8px'}}>{session.join_code}</span>
            </h2>
            <p style={{ opacity: 0.8, fontSize: '1.2rem', marginTop: '0.5rem' }}>
-             localhost:5173/join &nbsp; &bull; &nbsp; 
+             {window.location.host}/join &nbsp; &bull; &nbsp; 
              <strong style={{color: '#d946ef'}}>{session.game_mode === 'tnd' ? 'truth & dare.' : 'rapid fire.'}</strong>
            </p>
         </div>
